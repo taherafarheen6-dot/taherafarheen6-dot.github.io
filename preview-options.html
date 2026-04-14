@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Section – Visualization Options</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#07060f; font-family:'Segoe UI',sans-serif; color:#fff; padding:30px 20px; }
+h1 { text-align:center; font-size:1.4rem; color:#c4c0e8; margin-bottom:7px; }
+.subtitle { text-align:center; color:#6C63FF; font-size:.87rem; margin-bottom:34px; }
+.grid { display:flex; gap:32px; justify-content:center; flex-wrap:wrap; }
+.card {
+  background:#0e0d20; border-radius:18px; overflow:hidden; width:370px;
+  box-shadow:0 8px 40px rgba(108,99,255,.30); border:1px solid rgba(108,99,255,.22);
+}
+.card-label { padding:13px 18px; background:#0a0918; border-bottom:1px solid rgba(108,99,255,.15); }
+.card-label h2 { font-size:.95rem; color:#818cf8; }
+.card-label p  { font-size:.75rem; color:#64648a; margin-top:3px; }
+.preview { width:370px; height:441px; overflow:hidden; }
+.preview svg { width:370px; height:441px; display:block; }
+</style>
+</head>
+<body>
+
+<h1>✨ Home Section – Choose Your Visualization Style</h1>
+<p class="subtitle">Clean animated data charts · 1000 × 1194 px · Pick Option 1, 2 or 3</p>
+<div class="grid">
+
+<!-- ═══════════════════════════════════════════════════════
+     OPTION 1 — Analytics Dashboard
+═══════════════════════════════════════════════════════ -->
+<div class="card">
+  <div class="card-label">
+    <h2>Option 1 — Analytics Dashboard</h2>
+    <p>KPI cards · Line chart · Bar chart · Donut · Scatter</p>
+  </div>
+  <div class="preview">
+  <svg viewBox="0 0 1000 1194" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="25%" r="80%">
+      <stop offset="0%" stop-color="#13104e"/>
+      <stop offset="100%" stop-color="#060510"/>
+    </radialGradient>
+    <linearGradient id="lineArea1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6C63FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#6C63FF" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="bar1a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <filter id="glow1"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="clip1"><rect x="70" y="300" width="540" height="210"/></clipPath>
+    <clipPath id="clipBar"><rect x="70" y="600" width="390" height="200"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1194" fill="url(#bg1)"/>
+  <!-- Subtle grid dots -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="rgba(108,99,255,0.12)"/>
+  </pattern>
+  <rect width="1000" height="1194" fill="url(#dots)"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1000" height="72" fill="rgba(108,99,255,0.06)"/>
+  <line x1="0" y1="72" x2="1000" y2="72" stroke="rgba(108,99,255,0.22)" stroke-width="1"/>
+  <text x="32" y="26" fill="#818cf8" font-size="11" letter-spacing="2" opacity="0.7">DATA ANALYTICS</text>
+  <text x="32" y="52" fill="#e0e7ff" font-size="22" font-weight="700" letter-spacing="0.5">Portfolio Dashboard</text>
+  <!-- Status pill -->
+  <rect x="840" y="22" width="130" height="30" rx="15" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)" stroke-width="1"/>
+  <circle cx="860" cy="37" r="5" fill="#22c55e"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+  <text x="873" y="42" fill="#86efac" font-size="12" font-weight="600">LIVE DATA</text>
+
+  <!-- ── KPI CARDS ROW ── -->
+  <!-- Card 1: Accuracy -->
+  <rect x="32" y="90" width="290" height="118" rx="16" fill="rgba(108,99,255,0.09)" stroke="rgba(108,99,255,0.28)" stroke-width="1.5"/>
+  <text x="52" y="118" fill="#818cf8" font-size="11" letter-spacing="1.8">ACCURACY RATE</text>
+  <text x="52" y="162" fill="#e0e7ff" font-size="40" font-weight="700">98.5%</text>
+  <text x="52" y="192" fill="#86efac" font-size="12">▲ 2.3% vs last quarter</text>
+  <!-- Mini sparkline -->
+  <polyline points="208,170 222,158 236,163 250,148 264,152 278,138 295,143"
+    fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Card 2: Projects -->
+  <rect x="355" y="90" width="290" height="118" rx="16" fill="rgba(79,70,229,0.09)" stroke="rgba(79,70,229,0.28)" stroke-width="1.5"/>
+  <text x="375" y="118" fill="#818cf8" font-size="11" letter-spacing="1.8">TOTAL PROJECTS</text>
+  <text x="375" y="162" fill="#e0e7ff" font-size="40" font-weight="700">10+</text>
+  <text x="375" y="192" fill="#86efac" font-size="12">▲ 3 new this year</text>
+  <!-- Mini bar sparkline -->
+  <rect x="510" y="168" width="14" height="18" rx="3" fill="rgba(108,99,255,0.5)"/>
+  <rect x="528" y="154" width="14" height="32" rx="3" fill="rgba(108,99,255,0.65)"/>
+  <rect x="546" y="160" width="14" height="26" rx="3" fill="rgba(108,99,255,0.55)"/>
+  <rect x="564" y="146" width="14" height="40" rx="3" fill="rgba(108,99,255,0.8)"/>
+  <rect x="582" y="150" width="14" height="36" rx="3" fill="#6C63FF"/>
+  <rect x="600" y="138" width="14" height="48" rx="3" fill="#818cf8"/>
+
+  <!-- Card 3: Experience -->
+  <rect x="678" y="90" width="290" height="118" rx="16" fill="rgba(99,102,241,0.09)" stroke="rgba(99,102,241,0.28)" stroke-width="1.5"/>
+  <text x="698" y="118" fill="#818cf8" font-size="11" letter-spacing="1.8">YEARS EXPERIENCE</text>
+  <text x="698" y="162" fill="#e0e7ff" font-size="40" font-weight="700">2+</text>
+  <text x="698" y="192" fill="#a5b4fc" font-size="12">Ecommerce · Finance · Healthcare</text>
+  <!-- Circular progress -->
+  <circle cx="900" cy="145" r="30" fill="none" stroke="rgba(108,99,255,0.18)" stroke-width="8"/>
+  <circle cx="900" cy="145" r="30" fill="none" stroke="#6C63FF" stroke-width="8"
+    stroke-linecap="round" stroke-dasharray="0 188" transform="rotate(-90 900 145)">
+    <animate attributeName="stroke-dasharray" from="0 188" to="132 188"
+      dur="2s" begin="0.3s" fill="freeze" repeatCount="indefinite"/>
+  </circle>
+  <text x="900" y="150" text-anchor="middle" fill="#c7d2fe" font-size="14" font-weight="700">70%</text>
+
+  <!-- ── LINE CHART CARD ── -->
+  <rect x="32" y="230" width="590" height="290" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="52" y="262" fill="#a5b4fc" font-size="14" font-weight="600" letter-spacing="0.5">REVENUE TREND</text>
+  <text x="52" y="282" fill="#636380" font-size="11">Jan – Jun 2024</text>
+  <!-- Value highlight -->
+  <text x="540" y="262" fill="#86efac" font-size="13" font-weight="600" text-anchor="end">+24.8% ▲</text>
+
+  <!-- Y-axis grid lines -->
+  <line x1="70" y1="300" x2="600" y2="300" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="70" y1="335" x2="600" y2="335" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="70" y1="370" x2="600" y2="370" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="70" y1="405" x2="600" y2="405" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="70" y1="440" x2="600" y2="440" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Y labels -->
+  <text x="58" y="304" fill="#636380" font-size="10" text-anchor="end">80K</text>
+  <text x="58" y="339" fill="#636380" font-size="10" text-anchor="end">60K</text>
+  <text x="58" y="374" fill="#636380" font-size="10" text-anchor="end">40K</text>
+  <text x="58" y="409" fill="#636380" font-size="10" text-anchor="end">20K</text>
+  <text x="58" y="444" fill="#636380" font-size="10" text-anchor="end">0</text>
+
+  <!-- Area fill -->
+  <polygon points="70,440 155,398 242,412 329,362 418,375 506,324 590,339 590,440"
+    fill="url(#lineArea1)"/>
+  <!-- Line -->
+  <polyline points="70,440 155,398 242,412 329,362 418,375 506,324 590,339"
+    fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+    stroke-dasharray="680" stroke-dashoffset="680">
+    <animate attributeName="stroke-dashoffset" from="680" to="0"
+      dur="3s" begin="0.2s" repeatCount="indefinite"/>
+  </polyline>
+  <!-- Data points -->
+  <circle cx="70"  cy="440" r="5" fill="#6C63FF" stroke="#0d0b22" stroke-width="2"/>
+  <circle cx="155" cy="398" r="5" fill="#6C63FF" stroke="#0d0b22" stroke-width="2"/>
+  <circle cx="242" cy="412" r="5" fill="#6C63FF" stroke="#0d0b22" stroke-width="2"/>
+  <circle cx="329" cy="362" r="5" fill="#6C63FF" stroke="#0d0b22" stroke-width="2"/>
+  <circle cx="418" cy="375" r="5" fill="#6C63FF" stroke="#0d0b22" stroke-width="2"/>
+  <circle cx="506" cy="324" r="5" fill="#818cf8" stroke="#0d0b22" stroke-width="2"/>
+  <circle cx="590" cy="339" r="6" fill="#c7d2fe" stroke="#0d0b22" stroke-width="2" filter="url(#glow1)">
+    <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- X labels -->
+  <text x="70"  y="462" fill="#636380" font-size="10" text-anchor="middle">Jan</text>
+  <text x="155" y="462" fill="#636380" font-size="10" text-anchor="middle">Feb</text>
+  <text x="242" y="462" fill="#636380" font-size="10" text-anchor="middle">Mar</text>
+  <text x="329" y="462" fill="#636380" font-size="10" text-anchor="middle">Apr</text>
+  <text x="418" y="462" fill="#636380" font-size="10" text-anchor="middle">May</text>
+  <text x="506" y="462" fill="#636380" font-size="10" text-anchor="middle">Jun</text>
+  <!-- Tooltip callout on last point -->
+  <rect x="554" y="305" width="76" height="26" rx="6" fill="#6C63FF"/>
+  <text x="592" y="323" text-anchor="middle" fill="white" font-size="12" font-weight="600">$68.4K</text>
+  <polygon points="592,331 584,340 600,340" fill="#6C63FF"/>
+
+  <!-- ── DONUT CHART CARD ── -->
+  <rect x="644" y="230" width="324" height="290" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="664" y="262" fill="#a5b4fc" font-size="14" font-weight="600" letter-spacing="0.5">SKILL DISTRIBUTION</text>
+  <!-- Donut -->
+  <circle cx="806" cy="375" r="80" fill="none" stroke="rgba(108,99,255,0.12)" stroke-width="28"/>
+  <!-- SQL segment -->
+  <circle cx="806" cy="375" r="80" fill="none" stroke="#6C63FF" stroke-width="28"
+    stroke-dasharray="0 502" transform="rotate(-90 806 375)">
+    <animate attributeName="stroke-dasharray" from="0 502" to="125 502" dur="1.5s" fill="freeze" repeatCount="indefinite"/>
+  </circle>
+  <!-- Python segment -->
+  <circle cx="806" cy="375" r="80" fill="none" stroke="#4F46E5" stroke-width="28"
+    stroke-dasharray="0 502" stroke-dashoffset="-125" transform="rotate(-90 806 375)">
+    <animate attributeName="stroke-dasharray" from="0 502" to="100 502" dur="1.5s" begin="0.2s" fill="freeze" repeatCount="indefinite"/>
+  </circle>
+  <!-- Power BI segment -->
+  <circle cx="806" cy="375" r="80" fill="none" stroke="#818cf8" stroke-width="28"
+    stroke-dasharray="0 502" stroke-dashoffset="-225" transform="rotate(-90 806 375)">
+    <animate attributeName="stroke-dasharray" from="0 502" to="75 502" dur="1.5s" begin="0.4s" fill="freeze" repeatCount="indefinite"/>
+  </circle>
+  <!-- Tableau segment -->
+  <circle cx="806" cy="375" r="80" fill="none" stroke="#a5b4fc" stroke-width="28"
+    stroke-dasharray="0 502" stroke-dashoffset="-300" transform="rotate(-90 806 375)">
+    <animate attributeName="stroke-dasharray" from="0 502" to="60 502" dur="1.5s" begin="0.6s" fill="freeze" repeatCount="indefinite"/>
+  </circle>
+  <!-- Center text -->
+  <text x="806" y="368" text-anchor="middle" fill="#c7d2fe" font-size="24" font-weight="700">4</text>
+  <text x="806" y="386" text-anchor="middle" fill="#818cf8" font-size="11">SKILLS</text>
+  <!-- Legend -->
+  <circle cx="667" cy="478" r="5" fill="#6C63FF"/>
+  <text x="677" y="483" fill="#a5b4fc" font-size="11">SQL · 25%</text>
+  <circle cx="667" cy="498" r="5" fill="#4F46E5"/>
+  <text x="677" y="503" fill="#a5b4fc" font-size="11">Python · 20%</text>
+  <circle cx="782" cy="478" r="5" fill="#818cf8"/>
+  <text x="792" y="483" fill="#a5b4fc" font-size="11">Power BI · 15%</text>
+  <circle cx="782" cy="498" r="5" fill="#a5b4fc"/>
+  <text x="792" y="503" fill="#a5b4fc" font-size="11">Tableau · 12%</text>
+
+  <!-- ── BAR CHART CARD ── -->
+  <rect x="32" y="542" width="456" height="298" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="52" y="574" fill="#a5b4fc" font-size="14" font-weight="600" letter-spacing="0.5">MONTHLY PERFORMANCE</text>
+  <text x="52" y="594" fill="#636380" font-size="11">Queries processed (thousands)</text>
+  <!-- Grid lines -->
+  <line x1="72" y1="612" x2="468" y2="612" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="72" y1="644" x2="468" y2="644" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="72" y1="676" x2="468" y2="676" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="72" y1="708" x2="468" y2="708" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <!-- Bars -->
+  <rect x="80"  y="686" width="44" height="54"  rx="5" fill="url(#bar1a)" opacity="0.7">
+    <animate attributeName="height" from="0" to="54"  dur="1.0s" fill="freeze" repeatCount="indefinite"/>
+    <animate attributeName="y"      from="740" to="686" dur="1.0s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <rect x="138" y="658" width="44" height="82"  rx="5" fill="url(#bar1a)" opacity="0.8">
+    <animate attributeName="height" from="0" to="82"  dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+    <animate attributeName="y"      from="740" to="658" dur="1.2s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <rect x="196" y="670" width="44" height="70"  rx="5" fill="url(#bar1a)" opacity="0.75">
+    <animate attributeName="height" from="0" to="70"  dur="1.1s" fill="freeze" repeatCount="indefinite"/>
+    <animate attributeName="y"      from="740" to="670" dur="1.1s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <rect x="254" y="628" width="44" height="112" rx="5" fill="url(#bar1a)" opacity="0.9">
+    <animate attributeName="height" from="0" to="112" dur="1.3s" fill="freeze" repeatCount="indefinite"/>
+    <animate attributeName="y"      from="740" to="628" dur="1.3s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <rect x="312" y="640" width="44" height="100" rx="5" fill="url(#bar1a)" opacity="0.85">
+    <animate attributeName="height" from="0" to="100" dur="1.25s" fill="freeze" repeatCount="indefinite"/>
+    <animate attributeName="y"      from="740" to="640" dur="1.25s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <rect x="370" y="608" width="44" height="132" rx="5" fill="#6C63FF" filter="url(#glow1)">
+    <animate attributeName="height" from="0" to="132" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
+    <animate attributeName="y"      from="740" to="608" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <!-- X labels -->
+  <text x="102" y="756" fill="#636380" font-size="10" text-anchor="middle">Jan</text>
+  <text x="160" y="756" fill="#636380" font-size="10" text-anchor="middle">Feb</text>
+  <text x="218" y="756" fill="#636380" font-size="10" text-anchor="middle">Mar</text>
+  <text x="276" y="756" fill="#636380" font-size="10" text-anchor="middle">Apr</text>
+  <text x="334" y="756" fill="#636380" font-size="10" text-anchor="middle">May</text>
+  <text x="392" y="756" fill="#636380" font-size="10" text-anchor="middle">Jun</text>
+  <!-- X axis line -->
+  <line x1="72" y1="742" x2="468" y2="742" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+
+  <!-- ── SCATTER PLOT CARD ── -->
+  <rect x="510" y="542" width="458" height="298" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="530" y="574" fill="#a5b4fc" font-size="14" font-weight="600" letter-spacing="0.5">INSIGHT CORRELATION</text>
+  <text x="530" y="594" fill="#636380" font-size="11">Data quality vs. business impact</text>
+  <!-- Grid -->
+  <line x1="548" y1="612" x2="948" y2="612" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="548" y1="644" x2="948" y2="644" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="548" y1="676" x2="948" y2="676" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="548" y1="708" x2="948" y2="708" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="614" y1="605" x2="614" y2="742" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="680" y1="605" x2="680" y2="742" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="746" y1="605" x2="746" y2="742" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="812" y1="605" x2="812" y2="742" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="878" y1="605" x2="878" y2="742" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <!-- Trend line -->
+  <line x1="555" y1="735" x2="940" y2="618" stroke="rgba(108,99,255,0.35)" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <!-- Scatter dots (various sizes = bubble chart) -->
+  <circle cx="580" cy="720" r="12" fill="rgba(108,99,255,0.5)"  stroke="#6C63FF" stroke-width="1.5"/>
+  <circle cx="625" cy="704" r="8"  fill="rgba(108,99,255,0.55)" stroke="#6C63FF" stroke-width="1.5"/>
+  <circle cx="660" cy="692" r="16" fill="rgba(79,70,229,0.55)"  stroke="#4F46E5" stroke-width="1.5"/>
+  <circle cx="705" cy="678" r="10" fill="rgba(108,99,255,0.6)"  stroke="#6C63FF" stroke-width="1.5"/>
+  <circle cx="740" cy="660" r="14" fill="rgba(99,102,241,0.6)"  stroke="#818cf8" stroke-width="1.5"/>
+  <circle cx="782" cy="648" r="8"  fill="rgba(108,99,255,0.65)" stroke="#6C63FF" stroke-width="1.5"/>
+  <circle cx="820" cy="636" r="18" fill="rgba(79,70,229,0.65)"  stroke="#4F46E5" stroke-width="1.5" filter="url(#glow1)"/>
+  <circle cx="868" cy="624" r="10" fill="rgba(129,140,248,0.7)" stroke="#818cf8" stroke-width="1.5"/>
+  <circle cx="910" cy="618" r="14" fill="#6C63FF" stroke="#c7d2fe" stroke-width="1.5" filter="url(#glow1)"/>
+  <!-- Axes -->
+  <line x1="548" y1="742" x2="948" y2="742" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <line x1="548" y1="605" x2="548" y2="742" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <text x="748" y="760" fill="#636380" font-size="10" text-anchor="middle">Data Quality Score →</text>
+  <text x="530" y="680" fill="#636380" font-size="10" text-anchor="middle" transform="rotate(-90 530 680)">Impact →</text>
+
+  <!-- ── BOTTOM METRICS STRIP ── -->
+  <rect x="32" y="862" width="214" height="100" rx="14" fill="rgba(108,99,255,0.08)" stroke="rgba(108,99,255,0.22)" stroke-width="1"/>
+  <text x="52" y="890" fill="#636380" font-size="11" letter-spacing="1.2">SQL QUERIES</text>
+  <text x="52" y="926" fill="#c7d2fe" font-size="30" font-weight="700">1.2M+</text>
+  <text x="52" y="948" fill="#818cf8" font-size="11">Executed to date</text>
+
+  <rect x="263" y="862" width="214" height="100" rx="14" fill="rgba(108,99,255,0.08)" stroke="rgba(108,99,255,0.22)" stroke-width="1"/>
+  <text x="283" y="890" fill="#636380" font-size="11" letter-spacing="1.2">DASHBOARDS</text>
+  <text x="283" y="926" fill="#c7d2fe" font-size="30" font-weight="700">25+</text>
+  <text x="283" y="948" fill="#818cf8" font-size="11">Built &amp; deployed</text>
+
+  <rect x="494" y="862" width="214" height="100" rx="14" fill="rgba(108,99,255,0.08)" stroke="rgba(108,99,255,0.22)" stroke-width="1"/>
+  <text x="514" y="890" fill="#636380" font-size="11" letter-spacing="1.2">DATASETS</text>
+  <text x="514" y="926" fill="#c7d2fe" font-size="30" font-weight="700">50M+</text>
+  <text x="514" y="948" fill="#818cf8" font-size="11">Rows processed</text>
+
+  <rect x="725" y="862" width="243" height="100" rx="14" fill="rgba(108,99,255,0.08)" stroke="rgba(108,99,255,0.22)" stroke-width="1"/>
+  <text x="745" y="890" fill="#636380" font-size="11" letter-spacing="1.2">DOMAINS</text>
+  <text x="745" y="926" fill="#c7d2fe" font-size="30" font-weight="700">3</text>
+  <text x="745" y="948" fill="#818cf8" font-size="11">Finance · Health · Ecom</text>
+
+  <!-- ── TOOLS ROW ── -->
+  <rect x="32" y="984" width="936" height="60" rx="14" fill="rgba(108,99,255,0.06)" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <text x="500" y="1004" text-anchor="middle" fill="#636380" font-size="10" letter-spacing="2">TECH STACK</text>
+  <text x="90"  y="1028" fill="#a5b4fc" font-size="15" font-weight="600">Python</text>
+  <text x="220" y="1028" fill="#a5b4fc" font-size="15" font-weight="600">SQL</text>
+  <text x="320" y="1028" fill="#a5b4fc" font-size="15" font-weight="600">Power BI</text>
+  <text x="460" y="1028" fill="#a5b4fc" font-size="15" font-weight="600">Tableau</text>
+  <text x="600" y="1028" fill="#a5b4fc" font-size="15" font-weight="600">Excel</text>
+  <text x="710" y="1028" fill="#a5b4fc" font-size="15" font-weight="600">Azure</text>
+  <text x="830" y="1028" fill="#a5b4fc" font-size="15" font-weight="600">Spark</text>
+  <!-- Separators -->
+  <line x1="200" y1="998" x2="200" y2="1038" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <line x1="295" y1="998" x2="295" y2="1038" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <line x1="437" y1="998" x2="437" y2="1038" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <line x1="580" y1="998" x2="580" y2="1038" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <line x1="692" y1="998" x2="692" y2="1038" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <line x1="810" y1="998" x2="810" y2="1038" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+
+  <!-- ── PROGRESS BARS SECTION ── -->
+  <rect x="32" y="1064" width="456" height="108" rx="14" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.20)" stroke-width="1"/>
+  <text x="52" y="1090" fill="#a5b4fc" font-size="13" font-weight="600">SKILL PROFICIENCY</text>
+  <!-- SQL bar -->
+  <text x="52" y="1112" fill="#818cf8" font-size="11">SQL</text>
+  <rect x="110" y="1100" width="354" height="8" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="110" y="1100" width="0" height="8" rx="4" fill="#6C63FF">
+    <animate attributeName="width" from="0" to="337" dur="2s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="472" y="1112" fill="#c7d2fe" font-size="11">95%</text>
+  <!-- Python bar -->
+  <text x="52" y="1136" fill="#818cf8" font-size="11">Python</text>
+  <rect x="110" y="1124" width="354" height="8" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="110" y="1124" width="0" height="8" rx="4" fill="#4F46E5">
+    <animate attributeName="width" from="0" to="319" dur="2.2s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="472" y="1136" fill="#c7d2fe" font-size="11">90%</text>
+  <!-- Power BI bar -->
+  <text x="52" y="1160" fill="#818cf8" font-size="11">Power BI</text>
+  <rect x="110" y="1148" width="354" height="8" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="110" y="1148" width="0" height="8" rx="4" fill="#818cf8">
+    <animate attributeName="width" from="0" to="301" dur="2.1s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="472" y="1160" fill="#c7d2fe" font-size="11">85%</text>
+
+  <!-- ── HEATMAP CARD ── -->
+  <rect x="510" y="1064" width="458" height="108" rx="14" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.20)" stroke-width="1"/>
+  <text x="530" y="1090" fill="#a5b4fc" font-size="13" font-weight="600">ACTIVITY HEATMAP</text>
+  <!-- 7x4 heatmap grid -->
+  <g transform="translate(530, 1100)">
+    <!-- Row labels -->
+    <text x="-8" y="11"  fill="#636380" font-size="9" text-anchor="end">Mon</text>
+    <text x="-8" y="27"  fill="#636380" font-size="9" text-anchor="end">Wed</text>
+    <text x="-8" y="43"  fill="#636380" font-size="9" text-anchor="end">Fri</text>
+    <!-- Cells: 10 columns x 3 rows -->
+    <!-- Values encoded as opacity levels -->
+    <rect x="0"   y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.2"/>
+    <rect x="16"  y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.5"/>
+    <rect x="32"  y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.3"/>
+    <rect x="48"  y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.8"/>
+    <rect x="64"  y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.6"/>
+    <rect x="80"  y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="1.0"/>
+    <rect x="96"  y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.7"/>
+    <rect x="112" y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.4"/>
+    <rect x="128" y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.9"/>
+    <rect x="144" y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.5"/>
+    <rect x="160" y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.8"/>
+    <rect x="176" y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.3"/>
+    <rect x="192" y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.6"/>
+    <rect x="208" y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.2"/>
+    <rect x="224" y="0" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.7"/>
+    <rect x="0"   y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.6"/>
+    <rect x="16"  y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.3"/>
+    <rect x="32"  y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.9"/>
+    <rect x="48"  y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.4"/>
+    <rect x="64"  y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="1.0"/>
+    <rect x="80"  y="16" width="12" height="12" rx="2" fill="#818cf8" opacity="0.8"/>
+    <rect x="96"  y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.5"/>
+    <rect x="112" y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.7"/>
+    <rect x="128" y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.2"/>
+    <rect x="144" y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.9"/>
+    <rect x="160" y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.6"/>
+    <rect x="176" y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.4"/>
+    <rect x="192" y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.8"/>
+    <rect x="208" y="16" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.3"/>
+    <rect x="224" y="16" width="12" height="12" rx="2" fill="#818cf8" opacity="1.0"/>
+    <rect x="0"   y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.4"/>
+    <rect x="16"  y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.8"/>
+    <rect x="32"  y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.5"/>
+    <rect x="48"  y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.3"/>
+    <rect x="64"  y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.7"/>
+    <rect x="80"  y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.9"/>
+    <rect x="96"  y="32" width="12" height="12" rx="2" fill="#818cf8" opacity="0.6"/>
+    <rect x="112" y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="1.0"/>
+    <rect x="128" y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.4"/>
+    <rect x="144" y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.8"/>
+    <rect x="160" y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.2"/>
+    <rect x="176" y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.7"/>
+    <rect x="192" y="32" width="12" height="12" rx="2" fill="#818cf8" opacity="0.5"/>
+    <rect x="208" y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.9"/>
+    <rect x="224" y="32" width="12" height="12" rx="2" fill="#6C63FF" opacity="0.6"/>
+  </g>
+
+  <!-- ── FOOTER ── -->
+  <rect x="0" y="1162" width="1000" height="32" fill="rgba(108,99,255,0.06)"/>
+  <line x1="0" y1="1162" x2="1000" y2="1162" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <text x="500" y="1183" text-anchor="middle" fill="#4a4a6e" font-size="11" letter-spacing="1">Tahera Farheen · Data Analyst · Power BI · SQL · Python</text>
+
+  </svg>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     OPTION 2 — Data Studio
+═══════════════════════════════════════════════════════ -->
+<div class="card">
+  <div class="card-label">
+    <h2>Option 2 — Data Studio</h2>
+    <p>Area chart · Horizontal bars · Gauge · Radar chart</p>
+  </div>
+  <div class="preview">
+  <svg viewBox="0 0 1000 1194" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg2" cx="30%" cy="20%" r="85%">
+      <stop offset="0%" stop-color="#0a1540"/>
+      <stop offset="100%" stop-color="#05060e"/>
+    </radialGradient>
+    <linearGradient id="areaG2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6C63FF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#6C63FF" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="area2b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.02"/>
+    </linearGradient>
+    <filter id="glow2"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1000" height="1194" fill="url(#bg2)"/>
+  <pattern id="grid2" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(108,99,255,0.06)" stroke-width="1"/>
+  </pattern>
+  <rect width="1000" height="1194" fill="url(#grid2)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="68" fill="rgba(10,15,50,0.8)"/>
+  <line x1="0" y1="68" x2="1000" y2="68" stroke="rgba(108,99,255,0.25)" stroke-width="1"/>
+  <circle cx="40" cy="34" r="10" fill="#6C63FF" opacity="0.8"/>
+  <text x="60" y="30" fill="#636380" font-size="11" letter-spacing="2">ANALYTICS</text>
+  <text x="60" y="52" fill="#e0e7ff" font-size="20" font-weight="700">Data Studio</text>
+  <!-- Date chip -->
+  <rect x="820" y="18" width="158" height="30" rx="8" fill="rgba(108,99,255,0.12)" stroke="rgba(108,99,255,0.3)" stroke-width="1"/>
+  <text x="899" y="38" text-anchor="middle" fill="#a5b4fc" font-size="12">Jan – Jun 2024</text>
+
+  <!-- ── LARGE AREA CHART ── -->
+  <rect x="32" y="82" width="936" height="310" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="52" y="114" fill="#a5b4fc" font-size="15" font-weight="600">TREND OVERVIEW</text>
+  <text x="52" y="134" fill="#636380" font-size="11">Multi-metric performance — Revenue vs. Queries Processed</text>
+  <!-- Legend -->
+  <line x1="740" y1="114" x2="770" y2="114" stroke="#6C63FF" stroke-width="2.5"/>
+  <text x="776" y="118" fill="#818cf8" font-size="11">Revenue</text>
+  <line x1="840" y1="114" x2="870" y2="114" stroke="#818cf8" stroke-width="2.5" stroke-dasharray="4 3"/>
+  <text x="876" y="118" fill="#818cf8" font-size="11">Queries</text>
+
+  <!-- Grid lines -->
+  <line x1="55" y1="155" x2="955" y2="155" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="55" y1="195" x2="955" y2="195" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="55" y1="235" x2="955" y2="235" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="55" y1="275" x2="955" y2="275" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="55" y1="355" x2="955" y2="355" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <!-- Y labels -->
+  <text x="44" y="159" fill="#636380" font-size="10" text-anchor="end">100K</text>
+  <text x="44" y="199" fill="#636380" font-size="10" text-anchor="end">75K</text>
+  <text x="44" y="239" fill="#636380" font-size="10" text-anchor="end">50K</text>
+  <text x="44" y="279" fill="#636380" font-size="10" text-anchor="end">25K</text>
+
+  <!-- Area 2 (queries — dashed) -->
+  <polygon points="55,310 207,288 359,298 511,262 663,272 815,240 955,252 955,355 55,355"
+    fill="url(#area2b)"/>
+  <polyline points="55,310 207,288 359,298 511,262 663,272 815,240 955,252"
+    fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 3"
+    stroke-dasharray="800" stroke-dashoffset="800">
+    <animate attributeName="stroke-dashoffset" from="800" to="0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </polyline>
+
+  <!-- Area 1 (revenue — solid) -->
+  <polygon points="55,340 207,295 359,310 511,258 663,270 815,218 955,232 955,355 55,355"
+    fill="url(#areaG2)"/>
+  <polyline points="55,340 207,295 359,310 511,258 663,270 815,218 955,232"
+    fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+    stroke-dasharray="950" stroke-dashoffset="950">
+    <animate attributeName="stroke-dashoffset" from="950" to="0" dur="3s" begin="0.2s" repeatCount="indefinite"/>
+  </polyline>
+  <!-- Dots on line 1 -->
+  <circle cx="55"  cy="340" r="4.5" fill="#6C63FF" stroke="#0a1540" stroke-width="2"/>
+  <circle cx="207" cy="295" r="4.5" fill="#6C63FF" stroke="#0a1540" stroke-width="2"/>
+  <circle cx="359" cy="310" r="4.5" fill="#6C63FF" stroke="#0a1540" stroke-width="2"/>
+  <circle cx="511" cy="258" r="4.5" fill="#6C63FF" stroke="#0a1540" stroke-width="2"/>
+  <circle cx="663" cy="270" r="4.5" fill="#6C63FF" stroke="#0a1540" stroke-width="2"/>
+  <circle cx="815" cy="218" r="4.5" fill="#818cf8" stroke="#0a1540" stroke-width="2"/>
+  <circle cx="955" cy="232" r="6"   fill="#c7d2fe" stroke="#0a1540" stroke-width="2" filter="url(#glow2)">
+    <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- X labels -->
+  <text x="55"  y="374" fill="#636380" font-size="11" text-anchor="middle">Jan</text>
+  <text x="207" y="374" fill="#636380" font-size="11" text-anchor="middle">Feb</text>
+  <text x="359" y="374" fill="#636380" font-size="11" text-anchor="middle">Mar</text>
+  <text x="511" y="374" fill="#636380" font-size="11" text-anchor="middle">Apr</text>
+  <text x="663" y="374" fill="#636380" font-size="11" text-anchor="middle">May</text>
+  <text x="815" y="374" fill="#636380" font-size="11" text-anchor="middle">Jun</text>
+  <!-- Peak annotation -->
+  <rect x="780" y="196" width="72" height="22" rx="5" fill="#6C63FF"/>
+  <text x="816" y="212" text-anchor="middle" fill="white" font-size="11" font-weight="600">Peak ▲</text>
+
+  <!-- ── HORIZONTAL BAR CHART ── -->
+  <rect x="32" y="415" width="472" height="350" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="52" y="447" fill="#a5b4fc" font-size="14" font-weight="600">TOOLS PROFICIENCY</text>
+  <!-- H-bars -->
+  <text x="52"  y="484" fill="#818cf8" font-size="12">SQL</text>
+  <rect x="160" y="472" width="304" height="18" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="160" y="472" width="0"   height="18" rx="4" fill="#6C63FF">
+    <animate attributeName="width" from="0" to="289" dur="1.8s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="474" y="486" fill="#c7d2fe" font-size="12" font-weight="600">95%</text>
+
+  <text x="52"  y="524" fill="#818cf8" font-size="12">Python</text>
+  <rect x="160" y="512" width="304" height="18" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="160" y="512" width="0"   height="18" rx="4" fill="#4F46E5">
+    <animate attributeName="width" from="0" to="274" dur="2.0s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="474" y="526" fill="#c7d2fe" font-size="12" font-weight="600">90%</text>
+
+  <text x="52"  y="564" fill="#818cf8" font-size="12">Power BI</text>
+  <rect x="160" y="552" width="304" height="18" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="160" y="552" width="0"   height="18" rx="4" fill="#818cf8">
+    <animate attributeName="width" from="0" to="258" dur="1.9s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="474" y="566" fill="#c7d2fe" font-size="12" font-weight="600">85%</text>
+
+  <text x="52"  y="604" fill="#818cf8" font-size="12">Tableau</text>
+  <rect x="160" y="592" width="304" height="18" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="160" y="592" width="0"   height="18" rx="4" fill="#a5b4fc">
+    <animate attributeName="width" from="0" to="234" dur="1.7s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="474" y="606" fill="#c7d2fe" font-size="12" font-weight="600">77%</text>
+
+  <text x="52"  y="644" fill="#818cf8" font-size="12">Excel</text>
+  <rect x="160" y="632" width="304" height="18" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="160" y="632" width="0"   height="18" rx="4" fill="#6C63FF" opacity="0.7">
+    <animate attributeName="width" from="0" to="219" dur="1.6s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="474" y="646" fill="#c7d2fe" font-size="12" font-weight="600">72%</text>
+
+  <text x="52"  y="684" fill="#818cf8" font-size="12">Spark</text>
+  <rect x="160" y="672" width="304" height="18" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="160" y="672" width="0"   height="18" rx="4" fill="#4F46E5" opacity="0.8">
+    <animate attributeName="width" from="0" to="197" dur="1.5s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="474" y="686" fill="#c7d2fe" font-size="12" font-weight="600">65%</text>
+
+  <text x="52"  y="724" fill="#818cf8" font-size="12">Azure</text>
+  <rect x="160" y="712" width="304" height="18" rx="4" fill="rgba(108,99,255,0.15)"/>
+  <rect x="160" y="712" width="0"   height="18" rx="4" fill="#818cf8" opacity="0.7">
+    <animate attributeName="width" from="0" to="180" dur="1.4s" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+  <text x="474" y="726" fill="#c7d2fe" font-size="12" font-weight="600">59%</text>
+
+  <!-- ── RADAR / SPIDER CHART ── -->
+  <rect x="526" y="415" width="442" height="350" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="546" y="447" fill="#a5b4fc" font-size="14" font-weight="600">COMPETENCY RADAR</text>
+
+  <!-- Radar rings (5 levels) -->
+  <g transform="translate(747,605)">
+    <polygon points="0,-100 95,-31 59,81 -59,81 -95,-31" fill="none" stroke="rgba(108,99,255,0.12)" stroke-width="1"/>
+    <polygon points="0,-80 76,-25 47,65 -47,65 -76,-25" fill="none" stroke="rgba(108,99,255,0.12)" stroke-width="1"/>
+    <polygon points="0,-60 57,-19 35,49 -35,49 -57,-19" fill="none" stroke="rgba(108,99,255,0.12)" stroke-width="1"/>
+    <polygon points="0,-40 38,-12 24,32 -24,32 -38,-12" fill="none" stroke="rgba(108,99,255,0.12)" stroke-width="1"/>
+    <polygon points="0,-20 19,-6 12,16 -12,16 -19,-6" fill="none" stroke="rgba(108,99,255,0.12)" stroke-width="1"/>
+    <!-- Axes -->
+    <line x1="0" y1="-100" x2="0"  y2="0" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+    <line x1="95" y1="-31" x2="0"  y2="0" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+    <line x1="59" y1="81"  x2="0"  y2="0" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+    <line x1="-59" y1="81" x2="0"  y2="0" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+    <line x1="-95" y1="-31" x2="0" y2="0" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+    <!-- Data polygon -->
+    <polygon points="0,-95 90,-29 52,76 -56,77 -87,-28"
+      fill="rgba(108,99,255,0.25)" stroke="#6C63FF" stroke-width="2.5" stroke-linejoin="round">
+      <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze" repeatCount="indefinite"/>
+    </polygon>
+    <!-- Labels -->
+    <text x="0"   y="-112" fill="#818cf8" font-size="11" text-anchor="middle">SQL</text>
+    <text x="108" y="-28"  fill="#818cf8" font-size="11">Python</text>
+    <text x="65"  y="98"   fill="#818cf8" font-size="11">Power BI</text>
+    <text x="-75" y="98"   fill="#818cf8" font-size="11">Tableau</text>
+    <text x="-115" y="-28" fill="#818cf8" font-size="11">Excel</text>
+  </g>
+
+  <!-- ── KPI STRIP ROW ── -->
+  <rect x="32"  y="786" width="218" height="90" rx="14" fill="rgba(108,99,255,0.08)" stroke="rgba(108,99,255,0.20)" stroke-width="1"/>
+  <text x="52"  y="812" fill="#636380" font-size="10" letter-spacing="1.5">SQL QUERIES</text>
+  <text x="52"  y="844" fill="#c7d2fe" font-size="28" font-weight="700">1.2M+</text>
+  <text x="52"  y="866" fill="#818cf8" font-size="11">Executed to date</text>
+
+  <rect x="268" y="786" width="218" height="90" rx="14" fill="rgba(108,99,255,0.08)" stroke="rgba(108,99,255,0.20)" stroke-width="1"/>
+  <text x="288" y="812" fill="#636380" font-size="10" letter-spacing="1.5">DASHBOARDS</text>
+  <text x="288" y="844" fill="#c7d2fe" font-size="28" font-weight="700">25+</text>
+  <text x="288" y="866" fill="#818cf8" font-size="11">Built &amp; deployed</text>
+
+  <rect x="504" y="786" width="218" height="90" rx="14" fill="rgba(108,99,255,0.08)" stroke="rgba(108,99,255,0.20)" stroke-width="1"/>
+  <text x="524" y="812" fill="#636380" font-size="10" letter-spacing="1.5">DATASETS</text>
+  <text x="524" y="844" fill="#c7d2fe" font-size="28" font-weight="700">50M+</text>
+  <text x="524" y="866" fill="#818cf8" font-size="11">Rows processed</text>
+
+  <rect x="740" y="786" width="228" height="90" rx="14" fill="rgba(108,99,255,0.08)" stroke="rgba(108,99,255,0.20)" stroke-width="1"/>
+  <text x="760" y="812" fill="#636380" font-size="10" letter-spacing="1.5">REPORTS</text>
+  <text x="760" y="844" fill="#c7d2fe" font-size="28" font-weight="700">40+</text>
+  <text x="760" y="866" fill="#818cf8" font-size="11">Stakeholder ready</text>
+
+  <!-- ── STACKED BAR ── -->
+  <rect x="32" y="896" width="936" height="180" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.20)" stroke-width="1.5"/>
+  <text x="52" y="926" fill="#a5b4fc" font-size="14" font-weight="600">DOMAIN EXPERIENCE BREAKDOWN</text>
+  <!-- Stacked horizontal bars per domain -->
+  <!-- Finance -->
+  <text x="140" y="960" fill="#818cf8" font-size="12" text-anchor="end">Finance</text>
+  <rect x="150" y="948" width="600" height="20" rx="4" fill="rgba(108,99,255,0.12)"/>
+  <rect x="150" y="948" width="240" height="20" rx="0" fill="#6C63FF" opacity="0.9"/>
+  <rect x="390" y="948" width="180" height="20" rx="0" fill="#4F46E5" opacity="0.8"/>
+  <rect x="570" y="948" width="120" height="20" rx="0" fill="#818cf8" opacity="0.7"/>
+  <rect x="690" y="948" width="60"  height="20" rx="0" fill="#a5b4fc" opacity="0.6"/>
+  <!-- Healthcare -->
+  <text x="140" y="990" fill="#818cf8" font-size="12" text-anchor="end">Healthcare</text>
+  <rect x="150" y="978" width="600" height="20" rx="4" fill="rgba(108,99,255,0.12)"/>
+  <rect x="150" y="978" width="180" height="20" rx="0" fill="#6C63FF" opacity="0.85"/>
+  <rect x="330" y="978" width="240" height="20" rx="0" fill="#4F46E5" opacity="0.75"/>
+  <rect x="570" y="978" width="100" height="20" rx="0" fill="#818cf8" opacity="0.65"/>
+  <!-- Ecommerce -->
+  <text x="140" y="1020" fill="#818cf8" font-size="12" text-anchor="end">Ecommerce</text>
+  <rect x="150" y="1008" width="600" height="20" rx="4" fill="rgba(108,99,255,0.12)"/>
+  <rect x="150" y="1008" width="200" height="20" rx="0" fill="#6C63FF" opacity="0.9"/>
+  <rect x="350" y="1008" width="160" height="20" rx="0" fill="#4F46E5" opacity="0.8"/>
+  <rect x="510" y="1008" width="200" height="20" rx="0" fill="#818cf8" opacity="0.7"/>
+  <!-- Legend -->
+  <rect x="152" y="1042" width="12" height="12" rx="2" fill="#6C63FF"/>
+  <text x="170" y="1053" fill="#818cf8" font-size="11">Data Cleaning</text>
+  <rect x="280" y="1042" width="12" height="12" rx="2" fill="#4F46E5"/>
+  <text x="298" y="1053" fill="#818cf8" font-size="11">Modeling</text>
+  <rect x="390" y="1042" width="12" height="12" rx="2" fill="#818cf8"/>
+  <text x="408" y="1053" fill="#818cf8" font-size="11">Visualization</text>
+  <rect x="520" y="1042" width="12" height="12" rx="2" fill="#a5b4fc"/>
+  <text x="538" y="1053" fill="#818cf8" font-size="11">Reporting</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1162" width="1000" height="32" fill="rgba(10,15,50,0.8)"/>
+  <line x1="0" y1="1162" x2="1000" y2="1162" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <text x="500" y="1183" text-anchor="middle" fill="#4a4a6e" font-size="11" letter-spacing="1">Tahera Farheen · Data Analyst · Power BI · SQL · Python</text>
+  </svg>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     OPTION 3 — Insight Board
+═══════════════════════════════════════════════════════ -->
+<div class="card">
+  <div class="card-label">
+    <h2>Option 3 — Insight Board</h2>
+    <p>Big numbers · Donut grid · Gauge · Heatmap · Timeline</p>
+  </div>
+  <div class="preview">
+  <svg viewBox="0 0 1000 1194" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="bg3" cx="60%" cy="10%" r="90%">
+      <stop offset="0%" stop-color="#180f4e"/>
+      <stop offset="100%" stop-color="#060410"/>
+    </radialGradient>
+    <linearGradient id="gaugeG" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="glow3"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1000" height="1194" fill="url(#bg3)"/>
+  <!-- Ambient glow blobs -->
+  <circle cx="150" cy="200" r="300" fill="rgba(108,99,255,0.07)"/>
+  <circle cx="850" cy="900" r="280" fill="rgba(79,70,229,0.07)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="72" fill="rgba(20,12,60,0.85)"/>
+  <line x1="0" y1="72" x2="1000" y2="72" stroke="rgba(108,99,255,0.3)" stroke-width="1"/>
+  <text x="32" y="26" fill="#818cf8" font-size="11" letter-spacing="2">PORTFOLIO</text>
+  <text x="32" y="54" fill="#e0e7ff" font-size="24" font-weight="700">Insight Board</text>
+  <!-- Decorative header line accent -->
+  <rect x="32" y="56" width="180" height="3" rx="1.5" fill="#6C63FF" opacity="0.6"/>
+  <rect x="220" y="57" width="60" height="2" rx="1" fill="#4F46E5" opacity="0.4"/>
+  <!-- Role tag -->
+  <rect x="770" y="20" width="198" height="34" rx="17" fill="rgba(108,99,255,0.18)" stroke="rgba(108,99,255,0.38)" stroke-width="1"/>
+  <text x="869" y="42" text-anchor="middle" fill="#a5b4fc" font-size="13" font-weight="600">Data Analyst</text>
+
+  <!-- ── BIG NUMBERS ROW ── -->
+  <rect x="32"  y="88" width="210" height="130" rx="16" fill="rgba(108,99,255,0.1)" stroke="rgba(108,99,255,0.30)" stroke-width="1.5"/>
+  <text x="137" y="122" text-anchor="middle" fill="#636380" font-size="11" letter-spacing="1.8">ACCURACY</text>
+  <text x="137" y="172" text-anchor="middle" fill="#c7d2fe" font-size="44" font-weight="700">98%</text>
+  <text x="137" y="200" text-anchor="middle" fill="#86efac" font-size="12">▲ Top Performance</text>
+
+  <rect x="262" y="88" width="210" height="130" rx="16" fill="rgba(108,99,255,0.1)" stroke="rgba(108,99,255,0.30)" stroke-width="1.5"/>
+  <text x="367" y="122" text-anchor="middle" fill="#636380" font-size="11" letter-spacing="1.8">PROJECTS</text>
+  <text x="367" y="172" text-anchor="middle" fill="#c7d2fe" font-size="44" font-weight="700">10+</text>
+  <text x="367" y="200" text-anchor="middle" fill="#a5b4fc" font-size="12">Across 3 domains</text>
+
+  <rect x="492" y="88" width="210" height="130" rx="16" fill="rgba(108,99,255,0.1)" stroke="rgba(108,99,255,0.30)" stroke-width="1.5"/>
+  <text x="597" y="122" text-anchor="middle" fill="#636380" font-size="11" letter-spacing="1.8">DATASETS</text>
+  <text x="597" y="172" text-anchor="middle" fill="#c7d2fe" font-size="44" font-weight="700">50M</text>
+  <text x="597" y="200" text-anchor="middle" fill="#a5b4fc" font-size="12">Rows processed</text>
+
+  <rect x="722" y="88" width="246" height="130" rx="16" fill="rgba(108,99,255,0.1)" stroke="rgba(108,99,255,0.30)" stroke-width="1.5"/>
+  <text x="845" y="122" text-anchor="middle" fill="#636380" font-size="11" letter-spacing="1.8">EXPERIENCE</text>
+  <text x="845" y="172" text-anchor="middle" fill="#c7d2fe" font-size="44" font-weight="700">2 yr</text>
+  <text x="845" y="200" text-anchor="middle" fill="#a5b4fc" font-size="12">MS in Data Analytics</text>
+
+  <!-- ── DONUT GRID (4 small donuts) ── -->
+  <rect x="32" y="238" width="460" height="340" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="52" y="268" fill="#a5b4fc" font-size="14" font-weight="600">SKILL BREAKDOWN</text>
+
+  <!-- Donut 1: SQL -->
+  <circle cx="142" cy="360" r="58" fill="none" stroke="rgba(108,99,255,0.15)" stroke-width="18"/>
+  <circle cx="142" cy="360" r="58" fill="none" stroke="#6C63FF" stroke-width="18"
+    stroke-dasharray="0 364" transform="rotate(-90 142 360)">
+    <animate attributeName="stroke-dasharray" from="0 364" to="346 364" dur="2s" fill="freeze" repeatCount="indefinite"/>
+  </circle>
+  <text x="142" y="355" text-anchor="middle" fill="#c7d2fe" font-size="18" font-weight="700">95%</text>
+  <text x="142" y="373" text-anchor="middle" fill="#818cf8" font-size="11">SQL</text>
+  <!-- Donut 2: Python -->
+  <circle cx="318" cy="360" r="58" fill="none" stroke="rgba(108,99,255,0.15)" stroke-width="18"/>
+  <circle cx="318" cy="360" r="58" fill="none" stroke="#4F46E5" stroke-width="18"
+    stroke-dasharray="0 364" transform="rotate(-90 318 360)">
+    <animate attributeName="stroke-dasharray" from="0 364" to="327 364" dur="2.2s" fill="freeze" repeatCount="indefinite"/>
+  </circle>
+  <text x="318" y="355" text-anchor="middle" fill="#c7d2fe" font-size="18" font-weight="700">90%</text>
+  <text x="318" y="373" text-anchor="middle" fill="#818cf8" font-size="11">Python</text>
+  <!-- Donut 3: Power BI -->
+  <circle cx="142" cy="490" r="58" fill="none" stroke="rgba(108,99,255,0.15)" stroke-width="18"/>
+  <circle cx="142" cy="490" r="58" fill="none" stroke="#818cf8" stroke-width="18"
+    stroke-dasharray="0 364" transform="rotate(-90 142 490)">
+    <animate attributeName="stroke-dasharray" from="0 364" to="309 364" dur="1.9s" fill="freeze" repeatCount="indefinite"/>
+  </circle>
+  <text x="142" y="485" text-anchor="middle" fill="#c7d2fe" font-size="18" font-weight="700">85%</text>
+  <text x="142" y="503" text-anchor="middle" fill="#818cf8" font-size="11">Power BI</text>
+  <!-- Donut 4: Tableau -->
+  <circle cx="318" cy="490" r="58" fill="none" stroke="rgba(108,99,255,0.15)" stroke-width="18"/>
+  <circle cx="318" cy="490" r="58" fill="none" stroke="#a5b4fc" stroke-width="18"
+    stroke-dasharray="0 364" transform="rotate(-90 318 490)">
+    <animate attributeName="stroke-dasharray" from="0 364" to="280 364" dur="1.7s" fill="freeze" repeatCount="indefinite"/>
+  </circle>
+  <text x="318" y="485" text-anchor="middle" fill="#c7d2fe" font-size="18" font-weight="700">77%</text>
+  <text x="318" y="503" text-anchor="middle" fill="#818cf8" font-size="11">Tableau</text>
+
+  <!-- ── GAUGE CHART ── -->
+  <rect x="514" y="238" width="454" height="340" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="534" y="268" fill="#a5b4fc" font-size="14" font-weight="600">OVERALL PROFICIENCY</text>
+
+  <!-- Gauge background arc (180° semicircle) -->
+  <path d="M 574 480 A 160 160 0 0 1 894 480" fill="none" stroke="rgba(108,99,255,0.15)" stroke-width="32" stroke-linecap="round"/>
+  <!-- Gauge fill (85% = ~153°) -->
+  <path d="M 574 480 A 160 160 0 0 1 894 480" fill="none" stroke="url(#gaugeG)" stroke-width="32"
+    stroke-linecap="round" stroke-dasharray="0 502">
+    <animate attributeName="stroke-dasharray" from="0 502" to="427 502" dur="2.5s" fill="freeze" repeatCount="indefinite"/>
+  </path>
+  <!-- Gauge tick marks -->
+  <line x1="734" y1="318" x2="734" y2="340" stroke="rgba(108,99,255,0.3)" stroke-width="1.5"/>
+  <line x1="798" y1="328" x2="786" y2="346" stroke="rgba(108,99,255,0.3)" stroke-width="1.5"/>
+  <line x1="850" y1="356" x2="834" y2="368" stroke="rgba(108,99,255,0.3)" stroke-width="1.5"/>
+  <line x1="670" y1="328" x2="682" y2="346" stroke="rgba(108,99,255,0.3)" stroke-width="1.5"/>
+  <line x1="618" y1="356" x2="634" y2="368" stroke="rgba(108,99,255,0.3)" stroke-width="1.5"/>
+  <!-- Gauge labels -->
+  <text x="572" y="510" fill="#636380" font-size="11">0%</text>
+  <text x="720" y="310" fill="#636380" font-size="11" text-anchor="middle">50%</text>
+  <text x="890" y="510" fill="#636380" font-size="11" text-anchor="end">100%</text>
+  <!-- Gauge needle -->
+  <line x1="734" y1="480" x2="596" y2="382" stroke="#c7d2fe" stroke-width="3" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate"
+      from="-90 734 480" to="0 734 480" dur="2.5s" fill="freeze" repeatCount="indefinite"/>
+  </line>
+  <circle cx="734" cy="480" r="10" fill="#6C63FF" stroke="#c7d2fe" stroke-width="2" filter="url(#glow3)"/>
+  <!-- Center value -->
+  <text x="734" y="450" text-anchor="middle" fill="#c7d2fe" font-size="36" font-weight="700">85%</text>
+  <text x="734" y="474" text-anchor="middle" fill="#818cf8" font-size="13">Overall Score</text>
+
+  <!-- ── TIMELINE / PROJECT CARDS ── -->
+  <rect x="32" y="598" width="936" height="260" rx="18" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.22)" stroke-width="1.5"/>
+  <text x="52" y="628" fill="#a5b4fc" font-size="14" font-weight="600">PROJECT TIMELINE</text>
+
+  <!-- Timeline spine -->
+  <line x1="52" y1="680" x2="956" y2="680" stroke="rgba(108,99,255,0.25)" stroke-width="2"/>
+
+  <!-- Project nodes -->
+  <!-- Project 1 -->
+  <circle cx="120" cy="680" r="10" fill="#6C63FF" stroke="#0d0b22" stroke-width="3" filter="url(#glow3)"/>
+  <line x1="120" y1="670" x2="120" y2="645" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="62" y="648" width="116" height="60" rx="10" fill="rgba(108,99,255,0.12)" stroke="rgba(108,99,255,0.28)" stroke-width="1"/>
+  <text x="120" y="668" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Sales Dashboard</text>
+  <text x="120" y="683" text-anchor="middle" fill="#636380" font-size="10">Power BI</text>
+  <text x="120" y="698" text-anchor="middle" fill="#818cf8" font-size="10">Jan 2023</text>
+  <!-- Line below -->
+  <line x1="120" y1="690" x2="120" y2="750" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="62" y="752" width="116" height="44" rx="10" fill="rgba(108,99,255,0.10)" stroke="rgba(108,99,255,0.22)" stroke-width="1"/>
+  <text x="120" y="772" text-anchor="middle" fill="#a5b4fc" font-size="10">Finance sector</text>
+  <text x="120" y="788" text-anchor="middle" fill="#636380" font-size="10">3 months</text>
+
+  <!-- Project 2 -->
+  <circle cx="310" cy="680" r="10" fill="#4F46E5" stroke="#0d0b22" stroke-width="3" filter="url(#glow3)"/>
+  <line x1="310" y1="690" x2="310" y2="756" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="252" y="757" width="116" height="44" rx="10" fill="rgba(108,99,255,0.12)" stroke="rgba(108,99,255,0.28)" stroke-width="1"/>
+  <text x="310" y="777" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">KPI Analysis</text>
+  <text x="310" y="793" text-anchor="middle" fill="#636380" font-size="10">SQL · Python</text>
+  <line x1="310" y1="670" x2="310" y2="645" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="310" y="642" text-anchor="middle" fill="#818cf8" font-size="10">Jun 2023</text>
+
+  <!-- Project 3 -->
+  <circle cx="500" cy="680" r="10" fill="#6C63FF" stroke="#0d0b22" stroke-width="3" filter="url(#glow3)"/>
+  <line x1="500" y1="670" x2="500" y2="645" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="442" y="648" width="116" height="60" rx="10" fill="rgba(108,99,255,0.12)" stroke="rgba(108,99,255,0.28)" stroke-width="1"/>
+  <text x="500" y="668" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Patient Flow ML</text>
+  <text x="500" y="683" text-anchor="middle" fill="#636380" font-size="10">Python · Azure</text>
+  <text x="500" y="698" text-anchor="middle" fill="#818cf8" font-size="10">Nov 2023</text>
+
+  <!-- Project 4 -->
+  <circle cx="690" cy="680" r="10" fill="#818cf8" stroke="#0d0b22" stroke-width="3" filter="url(#glow3)"/>
+  <line x1="690" y1="690" x2="690" y2="756" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="632" y="757" width="116" height="44" rx="10" fill="rgba(108,99,255,0.12)" stroke="rgba(108,99,255,0.28)" stroke-width="1"/>
+  <text x="690" y="777" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Ecom Analytics</text>
+  <text x="690" y="793" text-anchor="middle" fill="#636380" font-size="10">Tableau · SQL</text>
+  <line x1="690" y1="670" x2="690" y2="645" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="690" y="642" text-anchor="middle" fill="#818cf8" font-size="10">Mar 2024</text>
+
+  <!-- Project 5 (present) -->
+  <circle cx="890" cy="680" r="12" fill="#6C63FF" stroke="#c7d2fe" stroke-width="2.5" filter="url(#glow3)">
+    <animate attributeName="r" values="10;14;10" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="890" y1="670" x2="890" y2="645" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="830" y="636" width="120" height="44" rx="10" fill="#6C63FF" stroke="#818cf8" stroke-width="1"/>
+  <text x="890" y="656" text-anchor="middle" fill="white" font-size="11" font-weight="600">Current Project</text>
+  <text x="890" y="672" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="10">2024 →</text>
+
+  <!-- ── FINAL STATS STRIP ── -->
+  <rect x="32" y="876" width="936" height="74" rx="14" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <text x="500" y="898" text-anchor="middle" fill="#636380" font-size="10" letter-spacing="2">EDUCATION &amp; CERTIFICATIONS</text>
+  <text x="90"  y="934" fill="#a5b4fc" font-size="13" font-weight="600">M.S. Data Analytics</text>
+  <text x="330" y="934" fill="#a5b4fc" font-size="13" font-weight="600">B.B.A. Business</text>
+  <text x="540" y="934" fill="#a5b4fc" font-size="13" font-weight="600">Power BI Certified</text>
+  <text x="760" y="934" fill="#a5b4fc" font-size="13" font-weight="600">Azure Data Assoc.</text>
+  <line x1="314" y1="882" x2="314" y2="944" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <line x1="526" y1="882" x2="526" y2="944" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <line x1="744" y1="882" x2="744" y2="944" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+
+  <!-- ── CONTACT / FOOTER AREA ── -->
+  <rect x="32" y="966" width="936" height="100" rx="16" fill="rgba(108,99,255,0.09)" stroke="rgba(108,99,255,0.25)" stroke-width="1.5"/>
+  <text x="500" y="1000" text-anchor="middle" fill="#636380" font-size="11" letter-spacing="2">GET IN TOUCH</text>
+  <text x="500" y="1038" text-anchor="middle" fill="#c7d2fe" font-size="20" font-weight="600">taherafarheen6@gmail.com</text>
+  <text x="500" y="1060" text-anchor="middle" fill="#818cf8" font-size="12">LinkedIn  ·  GitHub  ·  Portfolio</text>
+  <!-- Decorative dots -->
+  <circle cx="120" cy="1030" r="4" fill="#6C63FF" opacity="0.6"/>
+  <circle cx="880" cy="1030" r="4" fill="#6C63FF" opacity="0.6"/>
+
+  <!-- ── HEATMAP STRIP ── -->
+  <rect x="32" y="1082" width="936" height="80" rx="14" fill="rgba(108,99,255,0.07)" stroke="rgba(108,99,255,0.18)" stroke-width="1"/>
+  <text x="52" y="1108" fill="#636380" font-size="10" letter-spacing="2">COMMIT / ACTIVITY HEATMAP</text>
+  <g transform="translate(52, 1114)">
+    <!-- 56 cells: 8 weeks x 7 days, each 14x14 with 2px gap -->
+    <rect x="0"   y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.15"/>
+    <rect x="16"  y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.45"/>
+    <rect x="32"  y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.28"/>
+    <rect x="48"  y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.75"/>
+    <rect x="64"  y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.55"/>
+    <rect x="80"  y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="1.00"/>
+    <rect x="96"  y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.68"/>
+    <rect x="112" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.35"/>
+    <rect x="128" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.85"/>
+    <rect x="144" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.48"/>
+    <rect x="160" y="0"  width="12" height="12" rx="2" fill="#818cf8" opacity="0.80"/>
+    <rect x="176" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.22"/>
+    <rect x="192" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.62"/>
+    <rect x="208" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.18"/>
+    <rect x="224" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.72"/>
+    <rect x="240" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.38"/>
+    <rect x="256" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.90"/>
+    <rect x="272" y="0"  width="12" height="12" rx="2" fill="#818cf8" opacity="0.58"/>
+    <rect x="288" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.42"/>
+    <rect x="304" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.78"/>
+    <rect x="320" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.25"/>
+    <rect x="336" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.65"/>
+    <rect x="352" y="0"  width="12" height="12" rx="2" fill="#818cf8" opacity="1.00"/>
+    <rect x="368" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.48"/>
+    <rect x="384" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.82"/>
+    <rect x="400" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.30"/>
+    <rect x="416" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.70"/>
+    <rect x="432" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.52"/>
+    <rect x="448" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.88"/>
+    <rect x="464" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.40"/>
+    <rect x="480" y="0"  width="12" height="12" rx="2" fill="#818cf8" opacity="0.95"/>
+    <rect x="496" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.60"/>
+    <rect x="512" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.32"/>
+    <rect x="528" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.76"/>
+    <rect x="544" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.20"/>
+    <rect x="560" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.55"/>
+    <rect x="576" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.92"/>
+    <rect x="592" y="0"  width="12" height="12" rx="2" fill="#818cf8" opacity="0.68"/>
+    <rect x="608" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.44"/>
+    <rect x="624" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.80"/>
+    <rect x="640" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.36"/>
+    <rect x="656" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.98"/>
+    <rect x="672" y="0"  width="12" height="12" rx="2" fill="#818cf8" opacity="0.75"/>
+    <rect x="688" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.50"/>
+    <rect x="704" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.88"/>
+    <rect x="720" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.28"/>
+    <rect x="736" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.66"/>
+    <rect x="752" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.42"/>
+    <rect x="768" y="0"  width="12" height="12" rx="2" fill="#818cf8" opacity="0.85"/>
+    <rect x="784" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.54"/>
+    <rect x="800" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.78"/>
+    <rect x="816" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.22"/>
+    <rect x="832" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.62"/>
+    <rect x="848" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="1.00"/>
+    <rect x="864" y="0"  width="12" height="12" rx="2" fill="#818cf8" opacity="0.72"/>
+    <rect x="880" y="0"  width="12" height="12" rx="2" fill="#6C63FF" opacity="0.38"/>
+  </g>
+  <text x="52"  y="1172" fill="#636380" font-size="9">Less</text>
+  <rect x="82"  y="1162" width="10" height="10" rx="2" fill="#6C63FF" opacity="0.2"/>
+  <rect x="96"  y="1162" width="10" height="10" rx="2" fill="#6C63FF" opacity="0.45"/>
+  <rect x="110" y="1162" width="10" height="10" rx="2" fill="#6C63FF" opacity="0.65"/>
+  <rect x="124" y="1162" width="10" height="10" rx="2" fill="#6C63FF" opacity="0.85"/>
+  <rect x="138" y="1162" width="10" height="10" rx="2" fill="#6C63FF" opacity="1.0"/>
+  <text x="152" y="1172" fill="#636380" font-size="9">More</text>
+
+  <!-- Footer -->
+  <line x1="0" y1="1182" x2="1000" y2="1182" stroke="rgba(108,99,255,0.15)" stroke-width="1"/>
+  <text x="500" y="1192" text-anchor="middle" fill="#3a3a5e" font-size="10" letter-spacing="1">Tahera Farheen · Data Analyst</text>
+  </svg>
+  </div>
+</div>
+
+</div><!-- .grid -->
+
+<p style="text-align:center;margin-top:28px;color:#454466;font-size:.84rem;">
+  Tell me which option (1, 2 or 3) and I'll add it to your portfolio home section! 🚀
+</p>
+</body>
+</html>
