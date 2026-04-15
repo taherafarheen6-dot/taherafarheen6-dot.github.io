@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tahera Farheen Portfolio</title>
+    <title>Rishabh Mishra Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -25,120 +25,6 @@
 
 
 <style>
-
-/*======================================
-//--//-->   SKILL BADGES
-======================================*/
-.skill-badges-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 10px;
-}
-
-.skill-badge {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgba(108, 99, 255, 0.08);
-  border: 1px solid rgba(108, 99, 255, 0.25);
-  border-radius: 16px;
-  padding: 14px 12px 12px;
-  width: calc(25% - 11px);
-  min-width: 90px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-  box-shadow: 0 4px 18px rgba(108, 99, 255, 0.15);
-  cursor: default;
-}
-
-.skill-badge:hover {
-  transform: translateY(-5px);
-  border-color: rgba(108, 99, 255, 0.6);
-  box-shadow: 0 8px 28px rgba(108, 99, 255, 0.35);
-}
-
-.skill-badge-icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 8px;
-}
-
-.skill-badge-icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-.skill-badge-name {
-  font-size: 12px;
-  font-weight: 700;
-  color: #e0e7ff;
-  letter-spacing: 0.5px;
-  margin-bottom: 4px;
-  text-align: center;
-}
-
-.skill-badge-pct {
-  font-size: 11px;
-  color: #818cf8;
-  margin-bottom: 6px;
-  font-weight: 600;
-}
-
-.skill-badge-bar {
-  width: 100%;
-  height: 4px;
-  background: rgba(108, 99, 255, 0.18);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.skill-badge-bar div {
-  height: 100%;
-  background: linear-gradient(90deg, #6C63FF, #a5b4fc);
-  border-radius: 4px;
-}
-
-@media (max-width: 767px) {
-  .skill-badge {
-    width: calc(33.33% - 10px);
-  }
-}
-
-/*======================================
-//--//-->   PARTICLE CANVAS
-======================================*/
-#particles-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.slider-item {
-  position: relative;
-}
-
-.slider-item .overlay,
-.slider-item .container {
-  position: relative;
-  z-index: 2;
-}
-
-/*======================================
-//--//-->   SHADOW HEADLINE CENTERING
-======================================*/
-
-/* Shift big shadow text upward so h2 sits at its vertical center */
-.heading-section {
-  padding-top: 2.5rem;
-}
-
-.heading-section h1.big {
-  top: -0.15em !important;
-}
 
 /*======================================
 //--//-->   ABOUT
@@ -167,7 +53,7 @@
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color: #6C63FF;
+  background-color: #ffbd39;
 }
 
 
@@ -223,63 +109,6 @@
   transform: scale(1.1);
 }
 
-/*======================================
-//--//-->   3D DASHBOARD SHADOW
-======================================*/
-.one-third.img {
-  filter: drop-shadow(0px 0px 30px rgba(108, 99, 255, 0.55))
-          drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.7));
-}
-
-/*======================================
-//--//-->   BUTTON SHADOWS
-======================================*/
-.btn-primary {
-  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.5),
-              0 2px 6px rgba(0, 0, 0, 0.4),
-              inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
-  transition: box-shadow 0.3s ease, transform 0.2s ease !important;
-}
-.btn-primary:hover {
-  box-shadow: 0 6px 22px rgba(108, 99, 255, 0.7),
-              0 4px 10px rgba(0, 0, 0, 0.5),
-              inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
-  transform: translateY(-2px);
-}
-.btn-white, .btn-outline-white {
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2),
-              0 2px 6px rgba(0, 0, 0, 0.4) !important;
-  transition: box-shadow 0.3s ease, transform 0.2s ease !important;
-}
-.btn-white:hover, .btn-outline-white:hover {
-  box-shadow: 0 6px 22px rgba(255, 255, 255, 0.35),
-              0 4px 10px rgba(0, 0, 0, 0.5) !important;
-  transform: translateY(-2px);
-}
-
-/*======================================
-//--//-->   TEXT SHADOWS
-======================================*/
-.owl-carousel.home-slider .slider-item .slider-text .subheading {
-  text-shadow:
-    0 0 6px rgba(108, 99, 255, 0.7),
-    0 0 16px rgba(108, 99, 255, 0.45),
-    0 3px 8px rgba(0, 0, 0, 0.7);
-}
-
-.owl-carousel.home-slider .slider-item .slider-text h1 {
-  text-shadow:
-    0 0 8px rgba(255, 255, 255, 0.3),
-    0 0 18px rgba(180, 170, 255, 0.3),
-    0 4px 12px rgba(0, 0, 0, 0.75);
-}
-
-.owl-carousel.home-slider .slider-item .slider-text h1 span {
-  text-shadow:
-    0 0 8px rgba(108, 99, 255, 0.7),
-    0 0 22px rgba(108, 99, 255, 0.45),
-    0 4px 12px rgba(0, 0, 0, 0.75);
-}
 
 </style>
 
@@ -290,7 +119,7 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <!-- <a class="navbar-brand" href="index.html">TAHERA FARHEEN</a> -->
+	      <a class="navbar-brand" href="index.html">Rishabh Mishra</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -309,17 +138,16 @@
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	       <div class="slider-item ">
-	      	<canvas id="particles-canvas"></canvas>
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/dashboard-option1.svg); background-size:85% auto; background-position:right 0 top 70px; background-repeat:no-repeat;">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Tahera Farheen</span></h1>
+			            <h1 class="mb-4 mt-3">I'm <span>Rishabh Mishra</span></h1>
 
 						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
@@ -331,9 +159,9 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Data Analyst  ',
-						// 'YouTuber  ',
-						// 'Teacher   ',
+						'Engineer  ',
+						'YouTuber  ',
+						'Teacher   ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -359,11 +187,11 @@
 
 						<br>
 						<br>
-			            <h2>A Data Analyst</h2>
+			            <h2>A Senior Data Analyst</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/taherafarheen" class="btn btn-primary py-3 px-4">Linkedin</a> 
-							<a href="https://github.com/taherafarheen6-dot" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
+			            <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -391,163 +219,46 @@
 									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Tahera Farheen</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>2 Years 4 Months</span></p>
-										<p><span class="title-s">Address: </span> <span>Minneapolis, USA</span></p>
+										<p><span class="title-s">Name: </span> <span>Rishabh Mishra</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
 									  </div>
 									</div>
 								  </div>
 
 								<div class="skill-mf">
-  <p class="title-s">Skills</p>
-  <div class="skill-badges-grid">
-
-    <!-- SQL -->
-    <div class="skill-badge">
-      <div class="skill-badge-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="24" cy="13" rx="16" ry="6" fill="#6C63FF" opacity="0.9"/>
-          <path d="M8 13v8c0 3.31 7.16 6 16 6s16-2.69 16-6v-8" fill="#4F46E5" opacity="0.85"/>
-          <path d="M8 21v8c0 3.31 7.16 6 16 6s16-2.69 16-6v-8" fill="#6C63FF" opacity="0.75"/>
-          <path d="M8 29v8c0 3.31 7.16 6 16 6s16-2.69 16-6v-8" fill="#818cf8" opacity="0.65"/>
-          <ellipse cx="24" cy="13" rx="16" ry="6" fill="none" stroke="#a5b4fc" stroke-width="1.5"/>
-        </svg>
-      </div>
-      <span class="skill-badge-name">SQL</span>
-      <span class="skill-badge-pct">95%</span>
-      <div class="skill-badge-bar"><div style="width:95%"></div></div>
-    </div>
-
-    <!-- Python -->
-    <div class="skill-badge">
-      <div class="skill-badge-icon">
-        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24.4 6C16.6 6 17 9.4 17 9.4v3.3h7.6v1H11.5S6 13.1 6 21c0 7.9 4.8 7.6 4.8 7.6h2.9v-3.7s-.2-4.8 4.7-4.8h8.1s4.5.1 4.5-4.4V10.4S31.7 6 24.4 6zm-4.5 2.6c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5z" fill="#3776AB"/>
-          <path d="M23.6 42c7.8 0 7.4-3.4 7.4-3.4v-3.3h-7.6v-1h13.1s5.5.6 5.5-7.4c0-7.9-4.8-7.6-4.8-7.6h-2.9v3.7s.2 4.8-4.7 4.8h-8.1s-4.5-.1-4.5 4.4v7.3S16.3 42 23.6 42zm4.5-2.6c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="#FFD43B"/>
-        </svg>
-      </div>
-      <span class="skill-badge-name">Python</span>
-      <span class="skill-badge-pct">85%</span>
-      <div class="skill-badge-bar"><div style="width:85%"></div></div>
-    </div>
-
-    <!-- Power BI -->
-    <div class="skill-badge">
-      <div class="skill-badge-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="6" y="28" width="8" height="14" rx="2" fill="#F2C811"/>
-          <rect x="17" y="20" width="8" height="22" rx="2" fill="#F2C811" opacity="0.85"/>
-          <rect x="28" y="12" width="8" height="30" rx="2" fill="#F2C811" opacity="0.7"/>
-          <rect x="34" y="6" width="8" height="36" rx="2" fill="#F2C811" opacity="0.9"/>
-        </svg>
-      </div>
-      <span class="skill-badge-name">Power BI</span>
-      <span class="skill-badge-pct">88%</span>
-      <div class="skill-badge-bar"><div style="width:88%"></div></div>
-    </div>
-
-    <!-- Tableau -->
-    <div class="skill-badge">
-      <div class="skill-badge-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="22" y="6" width="4" height="36" rx="2" fill="#E8762D"/>
-          <rect x="6" y="22" width="36" height="4" rx="2" fill="#E8762D"/>
-          <rect x="14" y="14" width="4" height="20" rx="2" fill="#5B9BD5" opacity="0.9"/>
-          <rect x="30" y="14" width="4" height="20" rx="2" fill="#5B9BD5" opacity="0.9"/>
-          <rect x="14" y="14" width="20" height="4" rx="2" fill="#5B9BD5" opacity="0.9"/>
-          <rect x="14" y="30" width="20" height="4" rx="2" fill="#5B9BD5" opacity="0.9"/>
-        </svg>
-      </div>
-      <span class="skill-badge-name">Tableau</span>
-      <span class="skill-badge-pct">82%</span>
-      <div class="skill-badge-bar"><div style="width:82%"></div></div>
-    </div>
-
-    <!-- Excel -->
-    <div class="skill-badge">
-      <div class="skill-badge-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="6" y="6" width="36" height="36" rx="4" fill="#1D6F42"/>
-          <path d="M14 16l6 8-6 8h4l4-5.5 4 5.5h4l-6-8 6-8h-4l-4 5.5-4-5.5z" fill="white"/>
-          <rect x="26" y="16" width="10" height="2.5" rx="1" fill="white" opacity="0.7"/>
-          <rect x="26" y="22" width="10" height="2.5" rx="1" fill="white" opacity="0.7"/>
-          <rect x="26" y="28" width="10" height="2.5" rx="1" fill="white" opacity="0.7"/>
-        </svg>
-      </div>
-      <span class="skill-badge-name">Excel</span>
-      <span class="skill-badge-pct">80%</span>
-      <div class="skill-badge-bar"><div style="width:80%"></div></div>
-    </div>
-
-    <!-- Data Visualization -->
-    <div class="skill-badge">
-      <div class="skill-badge-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polyline points="6,38 14,26 20,30 28,16 34,22 42,10" stroke="#a5b4fc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="14" cy="26" r="3" fill="#6C63FF"/>
-          <circle cx="20" cy="30" r="3" fill="#6C63FF"/>
-          <circle cx="28" cy="16" r="3" fill="#818cf8"/>
-          <circle cx="34" cy="22" r="3" fill="#818cf8"/>
-          <circle cx="42" cy="10" r="3.5" fill="#c7d2fe"/>
-          <line x1="6" y1="40" x2="42" y2="40" stroke="#a5b4fc" stroke-width="1.5" opacity="0.4"/>
-        </svg>
-      </div>
-      <span class="skill-badge-name">Data Viz</span>
-      <span class="skill-badge-pct">90%</span>
-      <div class="skill-badge-bar"><div style="width:90%"></div></div>
-    </div>
-
-    <!-- Statistical Analysis -->
-    <div class="skill-badge">
-      <div class="skill-badge-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="8"  y="30" width="6" height="12" rx="2" fill="#6C63FF" opacity="0.7"/>
-          <rect x="17" y="22" width="6" height="20" rx="2" fill="#818cf8" opacity="0.8"/>
-          <rect x="26" y="16" width="6" height="26" rx="2" fill="#6C63FF" opacity="0.9"/>
-          <rect x="35" y="10" width="6" height="32" rx="2" fill="#a5b4fc"/>
-          <line x1="6" y1="42" x2="42" y2="42" stroke="#a5b4fc" stroke-width="1.5" opacity="0.5"/>
-          <polyline points="11,24 20,18 29,12 38,8" stroke="#c7d2fe" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 2"/>
-        </svg>
-      </div>
-      <span class="skill-badge-name">Statistics</span>
-      <span class="skill-badge-pct">85%</span>
-      <div class="skill-badge-bar"><div style="width:85%"></div></div>
-    </div>
-
-    <!-- AI Automation -->
-    <div class="skill-badge">
-      <div class="skill-badge-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Brain outline -->
-          <path d="M24 8c-4 0-7 2.5-8 6-2.5 0-5 2-5 5 0 1.5.5 2.8 1.4 3.8C11.5 24 11 25.5 11 27c0 3.5 2.5 6 6 6.5V36h14v-2.5c3.5-.5 6-3 6-6.5 0-1.5-.5-3-1.4-4.2.9-1 1.4-2.3 1.4-3.8 0-3-2.5-5-5-5-1-3.5-4-6-8-6z" fill="rgba(108,99,255,0.25)" stroke="#818cf8" stroke-width="1.5"/>
-          <!-- Circuit lines -->
-          <line x1="24" y1="36" x2="24" y2="42" stroke="#6C63FF" stroke-width="2" stroke-linecap="round"/>
-          <line x1="20" y1="42" x2="28" y2="42" stroke="#6C63FF" stroke-width="2" stroke-linecap="round"/>
-          <!-- Nodes inside brain -->
-          <circle cx="19" cy="22" r="2" fill="#6C63FF"/>
-          <circle cx="24" cy="19" r="2" fill="#a5b4fc"/>
-          <circle cx="29" cy="22" r="2" fill="#6C63FF"/>
-          <circle cx="24" cy="27" r="2" fill="#818cf8"/>
-          <!-- Connecting lines -->
-          <line x1="19" y1="22" x2="24" y2="19" stroke="#a5b4fc" stroke-width="1" opacity="0.7"/>
-          <line x1="24" y1="19" x2="29" y2="22" stroke="#a5b4fc" stroke-width="1" opacity="0.7"/>
-          <line x1="19" y1="22" x2="24" y2="27" stroke="#a5b4fc" stroke-width="1" opacity="0.7"/>
-          <line x1="29" y1="22" x2="24" y2="27" stroke="#a5b4fc" stroke-width="1" opacity="0.7"/>
-          <!-- Pulse animation dot -->
-          <circle cx="24" cy="19" r="4" fill="none" stroke="#c7d2fe" stroke-width="1" opacity="0.5">
-            <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
-          </circle>
-        </svg>
-      </div>
-      <span class="skill-badge-name">AI Automation</span>
-      <span class="skill-badge-pct">78%</span>
-      <div class="skill-badge-bar"><div style="width:78%"></div></div>
-    </div>
-
-  </div>
-</div>
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -555,19 +266,21 @@
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
-
+								
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>Data Analyst with 2+ years of experience and an M.S. in Data Analytics, skilled in turning complex datasets into clear business decisions. I build KPI-driven dashboards in Power BI and Tableau, write advanced SQL and Python, and deliver actionable insights across ecommerce, finance, and healthcare domains.</p>
+								<p>With over 5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
+									Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
+									Demonstrated success in leading impactful projects and providing effective mentorship.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>profile:</span> <span>Data Science & Analytics </span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Ecommerce, Finance and HealthCare</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Master's of Science in Data Analytics</span></li>
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Advanced Excel, SQL, Python, Microsoft Power BI & Tableau</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Claude AI and Chatgpt</span></li>
-									<!-- <li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li> -->
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
 									
 								</ul>
 							</div>
@@ -577,10 +290,10 @@
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
+									<span class="number" data-number="30">0</span> <span>+</span>
 									<span>&nbsp; Projects completed</span>
 								</p>
-								<p><a href="https://www.linkedin.com/in/taherafarheen" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+								<p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
 					</div>
@@ -598,76 +311,75 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Data Analyst with 2+ years of experience leveraging SQL, Python Power BI, Tableau, and Excel to transform complex datasets into actionable business insights. Proven ability to build automated dashboards, streamline reporting workflows, and support data-driven decision-making across sales, operations, and workforce analytics. Recently  completed a Master’s in Data Analytics and actively seeking Data Analyst / Business Intelligence Analyst roles.</p>
+            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
           </div>
         </div>
 
-		<div class="row justify-content-center text-center">
-			<div class="col-md-12">
-				<h1 class="big-4">Experience</h1>
-				<div class="underline"></div>
-			</div>
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
 		</div>
 		<br>
 		
 		<div class="row">
-				<div class="col-md-6 d-flex">
-					<div class="resume-wrap ftco-animate w-100">
-						<span class="date">2026-Present</span>
-						<h2>Tax Verification Analyst</h2>
-						<span class="position">Thomson Reuters</span>
-						<ul class="mt-4">
-							<li>Validated 500+ weekly tax and financial records to ensure accuracy, completeness, and regulatory compliance</li>
-							<li>Identified and resolved data discrepancies through structured verification and quality checks to improve reporting reliability</li>
-							<li>Reviewed financial documentation and collaborated with teams to streamline verification workflows</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-6 d-flex">
-					<div class="resume-wrap ftco-animate w-100">
-						<span class="date">2023-2024</span>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
 						<h2>Senior Data Analyst</h2>
-						<span class="position">Quadrant</span>
-						<ul class="mt-4">
-							<li>Analyzed 100K+ records to identify customer, workforce, and operational trends supporting data-driven decisions</li>
-							<li>Built interactive Power BI dashboards tracking headcount, attrition, and department performance KPIs</li>
-							<li>Automated reporting using Power BI and Advanced Excel, reducing manual effort and improving efficiency</li>
-						</ul>
+						<span class="position">Merkle</span>
+						<p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
+							<ul>
+								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+							</ul>
+						</p>
 					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2021</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">iQuanti</span>
+						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+							<ul>
+								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+							</ul>
+						</p>
+					</div>
+
 				</div>
 			</div>
 
 		<br>
 		<br>
 
-		<div class="row justify-content-center text-center">
-			<div class="col-md-12">
-				<h1 class="big-4">Education</h1>
-				<div class="underline"></div>
-			</div>
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
 		</div>
 		<br>
 		
-		
 			<div class="row">
-
-
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2024-2025</span>
-    					<h2>Master's of Science in Data Analytics</h2>
-    					<span class="position">Concordia University St.Paul</span>
-    					<p class="mt-4">Grade: 3.5/4</p>
+    					<span class="date">2014-2018</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
     				</div>
     			</div>
 
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2023</span>
-    					<h2>Bachelor of Business Administration</h2>
-    					<span class="position">Osmania University</span>
-    					<p class="mt-4">Grade: 8.59/10</p>
+    					<span class="date">2012-2013</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Army Public School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
     				</div>
 				</div>
     		</div>
@@ -682,52 +394,52 @@
 
    
 
-    <section class="ftco-section ftco-no-pb" id="project-section">
+    <section class="ftco-section" id="project-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & Tableau.</p>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/taherafarheen6-dot/PowerBI-Credit-Card-Reporting" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/taherafarheen6-dot/PowerBI-Credit-Card-Reporting">Credit Card Transaction Report using SQL and Power BI</a></h3>
-                <p>Analyzed Analyzed Credit Card Transaction Report using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
+                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/taherafarheen6-dot/Tableau-HR-Project" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/taherafarheen6-dot/Tableau-HR-Project">Human Resource Data Analysis using Tableau and SQL</a></h3>
-                <p>Built an interactive workforce analytics dashboard visualization to help in decision making</p>
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
+                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/taherafarheen6-dot/E-Commerce-Sales" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/taherafarheen6-dot/E-Commerce-Sales">Power BI and SQL E-Commerce Sales Project</a></h3>
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
                 <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
               </div>
             </div>
           </div>
         </div>
 	<br>
-		<!-- added justify-content-center to center align the last two projects
+		<!-- added justify-content-center to center align the last two projects -->
 		<div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
@@ -744,15 +456,73 @@
 				<div class="blog-entry justify-content-end">
 				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
 				</a>
-				<div class="text mt-3 float-right d-block"> -->
+				<div class="text mt-3 float-right d-block">
   
-				  <!-- <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3> -->
-				  <!-- <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p> -->
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
 				</div>
 			  </div>
+			</div>
+		 </div>
+	  </div>
     </section>
 
-    <section class="ftco-section ftco-no-pt contact-section ftco-no-pb" id="contact-section">
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -769,7 +539,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>Minneapolis, USA</p>
+	            <p>Bengaluru, India</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -778,7 +548,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">6124081926</a></p>
+	            <p><a href="tel://0101010101">+ 0 101 0101 101</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -787,16 +557,16 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">taherafarheen6@gmail.com</a></p>
+	            <p><a href="mailto:info@yoursite.com">conctact@domainname.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-cloud-download"></span>
+          			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">Download CV</a></p>
+	            <p><a href="#">resumelink</a></p>
 	          </div>
           </div>
 
@@ -805,17 +575,17 @@
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<!-- <h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2> -->
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
 				</div>
 			</div>
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/taherafarheen"><span class="icon-linkedin"></span></a></li>  
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
-				      <li class="ftco-animate"><a href="https://github.com/taherafarheen6-dot"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
 					</ul>
 				<br>
 		   </div>
@@ -840,7 +610,7 @@
 
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#4F46E5"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -855,103 +625,8 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-
+  
   <script src="js/main.js"></script>
-
-  <script>
-  /* ── PARTICLE / STAR BACKGROUND ── */
-  (function () {
-    const canvas = document.getElementById('particles-canvas');
-    const ctx    = canvas.getContext('2d');
-
-    const COLORS = ['#6C63FF','#818cf8','#a5b4fc','#c7d2fe','#ffffff'];
-    const COUNT  = 120;
-    let W, H, particles = [];
-
-    function resize() {
-      const parent = canvas.parentElement;
-      W = canvas.width  = parent.offsetWidth;
-      H = canvas.height = parent.offsetHeight;
-    }
-
-    function rand(min, max) { return Math.random() * (max - min) + min; }
-
-    function createParticle() {
-      const r = rand(0.5, 2.8);
-      return {
-        x:     rand(0, W),
-        y:     rand(0, H),
-        r:     r,
-        color: COLORS[Math.floor(Math.random() * COLORS.length)],
-        alpha: rand(0.15, 0.85),
-        vx:    rand(-0.18, 0.18),
-        vy:    rand(-0.18, 0.18),
-        // twinkle
-        twinkleSpeed: rand(0.005, 0.02),
-        twinkleDir:   Math.random() > 0.5 ? 1 : -1,
-        // glow radius for larger stars
-        glow: r > 1.8
-      };
-    }
-
-    function init() {
-      resize();
-      particles = Array.from({ length: COUNT }, createParticle);
-    }
-
-    function draw() {
-      ctx.clearRect(0, 0, W, H);
-
-      particles.forEach(p => {
-        // twinkle
-        p.alpha += p.twinkleSpeed * p.twinkleDir;
-        if (p.alpha >= 0.85 || p.alpha <= 0.1) p.twinkleDir *= -1;
-
-        // move
-        p.x += p.vx;
-        p.y += p.vy;
-        if (p.x < -10) p.x = W + 10;
-        if (p.x > W + 10) p.x = -10;
-        if (p.y < -10) p.y = H + 10;
-        if (p.y > H + 10) p.y = -10;
-
-        // glow for brighter stars
-        if (p.glow) {
-          const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 4);
-          grad.addColorStop(0, p.color.replace(')', `,${p.alpha})`).replace('rgb', 'rgba').replace('#', 'rgba(').replace('rgba(', 'rgba(').replace(/([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})/, (_,r,g,b) => `${parseInt(r,16)},${parseInt(g,16)},${parseInt(b,16)},`));
-          grad.addColorStop(1, 'rgba(0,0,0,0)');
-          // simplified glow
-          ctx.save();
-          ctx.globalAlpha = p.alpha * 0.4;
-          ctx.fillStyle   = p.color;
-          ctx.shadowColor = p.color;
-          ctx.shadowBlur  = 10;
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.r * 3, 0, Math.PI * 2);
-          ctx.fill();
-          ctx.restore();
-        }
-
-        // core dot
-        ctx.save();
-        ctx.globalAlpha = p.alpha;
-        ctx.fillStyle   = p.color;
-        ctx.shadowColor = p.color;
-        ctx.shadowBlur  = p.glow ? 8 : 3;
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.restore();
-      });
-
-      requestAnimationFrame(draw);
-    }
-
-    window.addEventListener('resize', () => { resize(); });
-    init();
-    draw();
-  })();
-  </script>
-
+    
   </body>
-</html>                                                                                                                                                                                                                                     
+</html>
